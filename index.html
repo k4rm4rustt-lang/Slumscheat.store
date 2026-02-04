@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slums External</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #0a0a0a; /* solid black base */
+      overflow: hidden;
+      position: relative;
+      color: white;
+    }
+
+    /* Dark animated wave background */
+    .wave-background {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, #05082a, #1a0733, #003355, #004d4d);
+      background-size: 400% 400%;
+      animation: gradientWave 15s ease infinite;
+      z-index: -1;
+      filter: blur(100px);
+      opacity: 0.7;
+    }
+
+    @keyframes gradientWave {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Combined red → white gradient across entire page */
+    .gradient-text {
+      background: linear-gradient(to right, #DC143C, white);
+      background-size: 200% 200%; /* stretch gradient */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      background-attachment: fixed; /* keep gradient position fixed across elements */
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      max-width: 600px;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+      margin-bottom: 3em;
+    }
+
+    .btn {
+      padding: 0.8em 2em;
+      font-size: 1em;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background-color: #DC143C;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background-color: black;
+      color: #DC143C;
+      border: 2px solid #DC143C;
+    }
+
+    .btn-secondary {
+      background-color: black;
+      border: 2px solid #DC143C;
+      color: #DC143C;
+    }
+
+    .btn-secondary:hover {
+      background-color: #DC143C;
+      color: black;
+    }
+
+    /* Stats section */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 3em;
+      flex-wrap: wrap;
+      font-weight: 600;
+      z-index: 1;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat h2 {
+      margin: 0;
+      font-size: 2em;
+      background: linear-gradient(to right, #DC143C, white);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-attachment: fixed;
+    }
+
+    .stat p {
+      margin: 0;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Dark animated wave background -->
+  <div class="wave-background"></div>
+
+  <!-- Main content -->
+  <h1 class="gradient-text">Welcome to Slums External</h1>
+  <p class="gradient-text">
+    Our focus is to improve your daily dose of dopamine while playing your favorite games.
+  </p>
+
+  <div class="buttons">
+    <a href="products.html" class="btn btn-primary">Browse Products</a>
+    <a href="#" class="btn btn-secondary">Join Discord</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <h2>500+</h2>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stat">
+      <h2>99.9%</h2>
+      <p>Uptime</p>
+    </div>
+    <div class="stat">
+      <h2>5.0</h2>
+      <p>Average Rating</p>
+    </div>
+  </div>
+
+</body>
+</html>

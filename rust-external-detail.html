@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rust External — Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+    .left-column {
+      flex: 1 1 400px;
+    }
+    .left-column img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #333;
+    }
+    .right-column {
+      flex: 1 1 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+    .box {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 1.5em;
+    }
+    .box h1, .box h2 {
+      color: #DC143C;
+    }
+    .box h1 { font-size: 2em; margin: 0 0 0.5em 0; }
+    .box h2 { font-size: 1.4em; margin-bottom: 0.5em; }
+    .box p, .box ul li { color: #cccccc; }
+    .features ul, .requirements ul { list-style: none; padding: 0; }
+    .features ul li, .requirements ul li { padding: 0.3em 0; }
+    .pricing {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+    .price-card {
+      background-color: #0f0f0f;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 1em;
+      text-align: center;
+      min-width: 90px;
+    }
+    .price-card span {
+      display: block;
+      font-weight: bold;
+      margin-top: 0.3em;
+      font-size: 1.1em;
+      color: #DC143C;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8em 2em;
+      background-color: #06348b;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.2s;
+    }
+    .btn:hover { background-color: #DC143C; }
+    .back { display: block; margin-top: 2em; text-align: center; color: #cccccc; text-decoration: none; }
+    .back:hover { color: white; }
+    @media (max-width: 900px) { .container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="left-column">
+    <img src="rust-external.jpg" alt="Rust External Detail">
+  </div>
+
+  <div class="right-column">
+
+    <div class="box">
+      <h1>Rust External</h1>
+      <p>Fully external and undetected Rust cheat with comprehensive aimbot, visuals, and utility features.</p>
+    </div>
+
+    <div class="box features">
+      <h2>Features</h2>
+      <ul>
+        <li>Silent Aim with adjustable hit chance</li>
+        <li>Memory Aim with smoothing controls</li>
+        <li>Player ESP – Box, Name, Distance, Skeleton</li>
+        <li>Chams (Visible/Invisible colors)</li>
+        <li>World ESP – Resource Locations, Crate Highlights</li>
+        <li>Spider-Man (No Clip), Infinite Jump, No Fall Damage</li>
+        <li>Fast Loot, Zoom, Interactive Camera</li>
+        <li>Recoil Control (X/Y Sliders), No Spread, Thick Bullet</li>
+        <li>Discord-style UI with customizable themes</li>
+        <li>Config Management – Save/Load/Delete Profiles</li>
+      </ul>
+    </div>
+
+    <div class="box requirements">
+      <h2>Requirements</h2>
+      <ul>
+        <li>Windows 10 / 11</li>
+        <li>Intel or AMD CPU</li>
+        <li>Fully External & Undetected</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <div class="price-card">1 Day<span>$7.99</span></div>
+        <div class="price-card">3 Days<span>$15.99</span></div>
+        <div class="price-card">7 Days<span>$29.99</span></div>
+        <div class="price-card">30 Days<span>$59.99</span></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <a href="#" class="btn">Agree to Terms</a>
+    </div>
+
+  </div>
+
+</div>
+
+<a href="products.html" class="back">← Back to Products</a>
+
+</body>
+</html>

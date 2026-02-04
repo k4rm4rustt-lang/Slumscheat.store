@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slums External — Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 2em;
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      color: #DC143C;
+    }
+    .products-container {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+      margin-top: 2em;
+    }
+    .product-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      width: 300px;
+      padding: 2em;
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      border-color: #DC143C;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .product-card h2 {
+      margin: 0.5em 0;
+      font-size: 1.8em;
+      color: #DC143C;
+    }
+    .product-card p.price {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin: 0.5em 0 1em;
+    }
+    .product-card a.btn {
+      display: inline-block;
+      padding: 0.8em 2em;
+      background-color: #06348b;
+      color: white;
+      font-weight: 600;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .product-card a.btn:hover {
+      background-color: #DC143C;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 3em;
+      color: #cccccc;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rust Products</h1>
+
+  <div class="products-container">
+    <div class="product-card">
+      <img src="rust-external-1.jpg" alt="Rust External Overview">
+      <h2>Slums Rust External</h2>
+      <p class="price">$7.99</p>
+      <a href="rust-external-detail.html" class="btn">View Product</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+</body>
+</html>
